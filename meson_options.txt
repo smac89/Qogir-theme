@@ -1,0 +1,18 @@
+option('name', type: 'string', value: 'Qogir',
+	description: 'Specify the theme name')
+option('theme', type: 'array', choices: ['default', 'manjaro', 'ubuntu', 'all'], value: ['default'],
+	description: 'Specify theme primary color variant(s)')
+option('color', type: 'array', choices: ['standard', 'light', 'dark'],
+	description: 'Specify theme color variant(s)')
+option('icon', type: 'combo', value: 'default', choices: ['default', 
+	'manjaro', 'ubuntu', 'fedora',
+	'debian','arch','gnome','budgie',
+	'popos','gentoo','void',
+	'zorin','mxlinux','opensuse'],
+	description: 'Specify logo icon on nautilus')
+option('gdm', type: 'boolean', value: false,
+	description: 'Install GDM theme')
+option('libadwaita', type: 'boolean', value: false,
+	description: 'Install link to gtk4 config for theming libadwaita')
+option('tweaks', type: 'array', choices: ['image', 'square', 'round'], value: [],
+	description: 'Specify versions for tweaks (options can mix use)')
